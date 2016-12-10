@@ -148,7 +148,7 @@
             } else {
                 echo "Not Update Your Record" ;
             }
-            mysqli_close($con);
+            mysqli_close($conn);
         }
     ?>
 </body>

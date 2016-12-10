@@ -4,18 +4,15 @@
     <meta charset="utf-8">
     <title>View :: Student Information System</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
 </head>
 <body>
     <?php
         require 'db_conn.php';
         if(isset($_POST['submit'])) {
-          $rn = $_POST['rn'];
+            $rn = $_POST['rn'];
             $q1 = mysqli_query($conn, "SELECT * FROM `std_info` WHERE rn = $rn");
             if(mysqli_num_rows($q1) > 0) {
-                while($row = mysqli_fetch_assoc($q1)) {
-                    $data = $row;
-                }
+                $data = mysqli_fetch_assoc($q1);
             } else {
                 $message = "No student with that ID number, try again!";
             }
@@ -75,9 +72,7 @@
             </tr>
           <?php }
           if (isset($message)) { ?>
-            <tr>
-                <h3><?=$message?></h3>
-            </tr>
+            <h3><?=$message?></h3>
           <?php } ?>
         </table>
     </form>

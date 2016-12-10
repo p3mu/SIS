@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>Delete :: Student Information System</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
 </head>
 <body>
-    <form action="" id="reg" method="post" name="reg" onsubmit="return validate()">
+    <form action="" id="reg" method="post" name="reg">
         <h1>STUDENT INFORMATION SYSTEM</h1>
         <nav>
             <a href="index.php">HOME</a>
