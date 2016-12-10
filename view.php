@@ -19,7 +19,7 @@
             } else {
                 $message = "No student with that ID number, try again!";
             }
-            mysqli_close($con);
+            mysqli_close($conn);
         }
     ?>
     <form action="" id="reg" method="post" name="reg">

@@ -18,7 +18,7 @@ function validate() {
 
     }
 
-    if (/select/.test(lname)) {
+    if (lname === '') {
         window.alert("Please Enter Last Name!");
         document.reg.ln.focus();
         return false;
